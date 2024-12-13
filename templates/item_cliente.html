@@ -4,10 +4,10 @@
   <td>{{ cliente.email }}</td>
   <td>
     <button class="btn btn-primary" 
-    c-get="{{ url_for('form_edit_client', client_id=cliente.id) }}" c-target="#form-client">
+    c-get="{{ url_for('client.form_edit_client', client_id=cliente.id) }}" c-target="#form-client">
     editar</button>
     <button class="btn btn-danger"
-     c-delete="{{ url_for('client.delete_client', client_id=cliente.id) }}" 
-     c-remove-closest="tr">deletar</button>
+      c-delete="{{ url_for('client.delete_client', client_id=cliente.id) }}" 
+      c-remove-closest="tr">deletar</button>
   </td>
 </tr>
